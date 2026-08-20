@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Download App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <img id="icon" src="icon.png" alt="icon" class="icon" onerror="this.style.display='none'" />
+    <h1 id="app-name">Nama App Kamu</h1>
+    <p id="app-desc" class="desc">Deskripsi singkat app kamu di sini.</p>
+
+    <div class="meta">
+      <div class="meta-item">
+        <span class="meta-label">Versi</span>
+        <span id="app-version" class="meta-value">1.0.0</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Ukuran</span>
+        <span id="app-size" class="meta-value">- MB</span>
+      </div>
+    </div>
+
+    <!-- Ganti href ke lokasi APK kamu: file di repo ini, atau URL GitHub Release -->
+    <a id="download-btn" href="apk/app.apk" download class="download-btn">
+      ⬇ Download APK
+    </a>
+
+    <p class="note">File .apk — pastikan izinkan "install dari sumber tidak dikenal" di HP kamu.</p>
+  </div>
+</body>
+</html>
